@@ -1,0 +1,27 @@
+/* Responsive cho màn hình nhỏ dưới 600px */
+@media (max-width: 600px) {
+  .movie-detail-container {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+
+  .movie-detail-backdrop {
+    height: 50vh !important;
+    padding: 10px !important;
+  }
+
+  .movie-info {
+    font-size: 16px !important;
+    padding: 10px !important;
+  }
+
+  .review-section {
+    height: auto !important;
+    padding: 10px !important;
+  }
+
+  button {
+    font-size: 14px !important;
+    padding: 8px 12px !important;
+  }
+}

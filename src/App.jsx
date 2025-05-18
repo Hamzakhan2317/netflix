@@ -7,6 +7,8 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase';
 import  { useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
+import TVShowsPage from './pages/TVShows/TVShows';
+import TitleCards from './components/TitleCards/TitleCards';
   
 
 
@@ -25,19 +27,25 @@ const App = () => {
      
       }
     
+      
     
    })}, []);
   
   return (
+    
     <div>
       <ToastContainer theme='dark' />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/player/:id' element={<Player />} />
+        <Route path='/TVshows' element={<TVShowsPage />} />
+        <Route path="/movies" element={<TitleCards title="Movies by Genre" />} />
       </Routes>
     </div>
   );
 };
+
+
 
 export default App;
