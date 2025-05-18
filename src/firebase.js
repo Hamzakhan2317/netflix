@@ -1,10 +1,10 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp } from "@firebase/app";
 import {
   getAuth,
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   signOut,
-} from "firebase/auth";
+} from "@firebase/auth";
 import {
   getFirestore,
   addDoc,
@@ -13,7 +13,7 @@ import {
   setDoc,
   query,
   onSnapshot
-} from "firebase/firestore";
+} from "@firebase/firestore";
 import { toast } from "react-toastify";
 
 // ✅ Firebase configuration
